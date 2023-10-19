@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Joey Thinkful : Software Engineer</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<header>
+		<h1>Name</h1>
+		<nav>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <form action="submit_form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <label for="inquiry">Inquiry Type:</label>
+    <select id="inquiry" name="inquiry">
+      <option value="general">General Inquiry</option>
+      <option value="support">Customer Support</option>
+      <option value="feedback">Feedback</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <p>Additional Information:</p>
+    <label>
+      <input type="radio" name="additional_info" value="yes"> Yes
+    </label>
+    <label>
+      <input type="radio" name="additional_info" value="no"> No
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter
+    </label><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
